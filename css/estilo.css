@@ -246,6 +246,28 @@ form input[type="submit"]:hover {
   letter-spacing: 0.5px;
 }
 
+/*footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: black;
+    padding: 16px;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: white;
+    font-size: 15px;
+}
 
 @media screen and (max-width:767.98px) {
     .navigation {
