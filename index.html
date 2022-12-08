@@ -12,9 +12,9 @@
         <nav class="navigation">
             <a href="#" class="logo"><span>GTX</span> eSports</a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Sobre</a></li>
-                <li class="nav-item"><a href="">Data</a></li>
-                <li class="nav-item"><a href="#">Inscrição do Evento</a></li>
+                <li class="nav-item"><a href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a href="#data">Data</a></li>
+                <li class="nav-item"><a href="#inscrever">Inscrição do Evento</a></li>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -25,19 +25,19 @@
     </header>
     <main>
 
-        <section class="home">
+        <section class="home" id="sobre">
             <div class="home-text">
                 <h4 class="text-h4">Bem vindo ao GTX eSports</h4>
                 <h1 class="text-h1">O evento mais esperado do ano</h1>
                 <p>Um campeonato incrível de jogos eletrônicos que vai levar sua diversão para o proximo nível !</p>
-                <a href="#" class="home-btn">Inscrever-se</a>
+                <a href="#inscrever" class="home-btn">Inscrever-se</a>
             </div>
             <div class="home-img">
                   <img src="./img/games1.jpg" alt="videogame">
             </div>
         </section>
 
-        <section class="home2">
+        <section class="home2" id="data">
             <div class="home-img2">
                 <img src="./img/games3.jpg" alt="videogame">
           </div>
@@ -45,10 +45,59 @@
                 <h4 class="text-h4">Quando ocorrerá o GTX eSports ?</h4>
                 <h1 class="text-h1">Sua diversão está próxima !</h1>
                 <p>O campeonato de jogos eletrônicos irá ocorrer no dia 27/12/2022 e conta com jogos exclusivos !</p>
-                <a href="#" class="home-btn">Inscrever-se</a>
+                <a href="#inscrever" class="home-btn">Inscrever-se</a>
             </div>
         </section>
 
-    </main>
+    <section class="formulario" id="inscrever">
+        <div class="home-text">
+            <h4 class="text-h4">Se Inscreva agora mesmo</h4>
+            <h1 class="text-h1">As vagas são limitadas</h1>
+            <p>Garanta já sua vaga, é sua chance de competir e se divertir.</p>
+        </div>
+        <div class="container">
+            <form>
+                <h2>Inscrever-se</h2>
+
+                <div class="input-field">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="Jogos">Selecione o Jogo:</label>
+                    <select name="game" id="game" required>
+                         <option value="">Escolha seu jogo</option>
+                         <option value="cs">Counter Strike</option>
+                         <option value="lol">League of Legends</option>
+                         <option value="valorant">Valorant</option>
+                         <option value="pubg">PUBG</option>
+                         <option value="warzone">Warzone</option>
+                     </select> 
+                 </div>
+
+                 <div class="input-field">
+                    <label for="login">Login:</label>
+                    <input type="login" name="login" id="login" placeholder="Digite seu Login" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="senha">Senha:</label>
+                    <input type="senha" name="senha" id="senha" placeholder="Digite sua senha" minlength="10" required>
+                </div>
+              
+                <input type="submit" value="Inscrever-se">
+            </form>
+        </div>
+        
+    </section>
+</main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
