@@ -292,6 +292,9 @@ form input[type="submit"]:hover {
         overflow: hidden;
         gap: 5rem;
     }
+    .home-text,.home-text2 {
+        width: 100%;
+    }
     .home .text-h4,.home2 .text-h4, .home-text .text-h4{
         font-size: 10px;
         flex-direction: column;
@@ -301,7 +304,7 @@ form input[type="submit"]:hover {
         line-height: 3rem;
     }
     .home p,.home2 p, .home-text p{
-        font-size: 1em;
+        font-size: 12px;
     }
     .home-img,.home-img2{
        display: none;
